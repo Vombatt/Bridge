@@ -81,7 +81,7 @@ header {
     height: 97%;
 }
 
-.menu span:hover > a{
+.menu span:hover > a {
     color: #00bac6;
 }
 
@@ -134,40 +134,71 @@ header {
     width: 96px;
 }
 
-#home:hover ~ #slider {
-    width: 62px;
-    margin-left: 0px;
-    margin-right: auto;
+@media (min-width: 700px) {
+
+    #home:hover ~ #slider {
+        width: 62px;
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    #about:hover ~ #slider {
+        width: 105px;
+        margin-left: 62px;
+        margin-right: auto;
+    }
+
+    #service:hover ~ #slider {
+        width: 81px;
+        margin-left: 167px;
+        margin-right: auto;
+    }
+
+    #pages:hover ~ #slider {
+        width: 67px;
+        margin-left: 248px;
+        margin-right: auto;
+    }
+
+    #blog:hover ~ #slider {
+        width: 64px;
+        margin-left: 315px;
+        margin-right: auto;
+    }
+
+    #contact:hover ~ #slider {
+        width: 96px;
+        margin-left: 379px;
+        margin-right: auto;
+    }
+
 }
 
-#about:hover ~ #slider {
-    width: 105px;
-    margin-left: 62px;
-    margin-right: auto;
-}
+@media (max-width: 700px) {
+    #slider {
+        display: none;
+    }
 
-#service:hover ~ #slider {
-    width: 81px;
-    margin-left: 167px;
-    margin-right: auto;
-}
+    .menu {
+        display: block;
+        height: auto;
+        width: 100px;
+        margin-left: 10px;
+    }
 
-#pages:hover ~ #slider {
-    width: 67px;
-    margin-left: 248px;
-    margin-right: auto;
-}
+    .menu span {
+        justify-content: flex-start;
+        height: 40px;
+    }
 
-#blog:hover ~ #slider {
-    width: 64px;
-    margin-left: 315px;
-    margin-right: auto;
-}
+    .menu-container {
+        height: auto;
+    }
 
-#contact:hover ~ #slider {
-    width: 96px;
-    margin-left: 379px;
-    margin-right: auto;
+    .search {
+        align-self: flex-start;
+        margin: 20px;
+    }
 }
 
 .search {
